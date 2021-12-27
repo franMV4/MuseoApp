@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MuseoApp</string>
+    <string name="add_missing_data">Tienes que completar todos los campos</string>
+    <string name="museum_added">Museum added</string>
+    <string name="artwork_added">Artwork added</string>
+
+</resources>
