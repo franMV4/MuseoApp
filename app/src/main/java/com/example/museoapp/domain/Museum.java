@@ -14,18 +14,12 @@ public class Museum {
     @ColumnInfo
     private String name;
     @ColumnInfo
-    private float latitude;
-    @ColumnInfo
-    private float longitude;
-    @ColumnInfo
     private int cityId;
 
 
-    public Museum(int id, String name, float latitude, float longitude, int cityId) {
+    public Museum(int id, String name, int cityId) {
         this.id = id;
         this.name = name;
-        this.latitude = latitude;
-        this.longitude = longitude;
         this.cityId = cityId;
     }
 
@@ -47,22 +41,6 @@ public class Museum {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public float getLatitude() {
-        return latitude;
-    }
-
-    public void setLatitude(float latitude) {
-        this.latitude = latitude;
-    }
-
-    public float getLongitude() {
-        return longitude;
-    }
-
-    public void setLongitude(float longitude) {
-        this.longitude = longitude;
     }
 
     public int getCityId() {

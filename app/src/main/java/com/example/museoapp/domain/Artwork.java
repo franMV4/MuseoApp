@@ -12,14 +12,17 @@ public class Artwork {
     private String name;
     @ColumnInfo
     private String author;
+    @ColumnInfo(typeAffinity = ColumnInfo.BLOB)
+    private byte[] image;
     @ColumnInfo
     private int museumId;
 
-    public Artwork(String name, String author, int museumId) {
+    public Artwork(String name, String author, byte[] image, int museumId) {
 
         this.name = name;
         this.author = author;
         this.museumId = museumId;
+        this.image = image;
     }
 
     public int getId() {
@@ -44,6 +47,12 @@ public class Artwork {
 
     public void setAuthor(String author) {
         this.author = author;
+    }
+
+    public byte[] getImage() { return image;}
+
+    public void setImage(byte[] image) {
+        this.image = image;
     }
 
     public int getMuseumId() {

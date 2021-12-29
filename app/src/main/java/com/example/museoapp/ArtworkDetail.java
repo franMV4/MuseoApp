@@ -4,7 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.example.museoapp.util.ImageUtils;
 
 public class ArtworkDetail extends AppCompatActivity {
 
@@ -19,6 +22,10 @@ public class ArtworkDetail extends AppCompatActivity {
         String author = intent.getStringExtra("author");
         String museumId = intent.getStringExtra("museumId");
 
+
+
+
+
         TextView etAuthorDetailName = findViewById(R.id.tvArtworkNameDetail);
         etAuthorDetailName.setText(name);
 
@@ -27,6 +34,10 @@ public class ArtworkDetail extends AppCompatActivity {
 
         TextView etAuthorDetailMuseum = findViewById(R.id.tvArtworkMuseumDetail);
         etAuthorDetailMuseum.setText(museumId);
+
+
+
+
 
     }
 }

@@ -68,7 +68,7 @@ public class NewMuseum extends AppCompatActivity implements AdapterView.OnItemCl
         if ((city.getId() == 0) || (name.equals(""))) {
             Toast.makeText(this, getString(R.string.add_missing_data), Toast.LENGTH_SHORT).show();
         } else {
-            Museum museum = new Museum(0, name,0,0, city.getId());
+            Museum museum = new Museum(0, name, city.getId());
 
             AppDatabase db = Room.databaseBuilder(getApplicationContext(),
                     AppDatabase.class, "museums").allowMainThreadQueries().build();

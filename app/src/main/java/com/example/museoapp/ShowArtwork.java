@@ -48,6 +48,7 @@ public class ShowArtwork extends AppCompatActivity implements AdapterView.OnItem
         intent.putExtra("name", artwork.getName());
         intent.putExtra("author", artwork.getAuthor());
         intent.putExtra("museumId", artwork.getMuseumId());
+        intent.putExtra("artworkImageV", artwork.getImage());
         startActivity(intent);
     }
 

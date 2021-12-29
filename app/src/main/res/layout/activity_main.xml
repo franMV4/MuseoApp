@@ -88,6 +88,13 @@
             android:onClick="ShowMuseumsActivity"
             android:text="Ver museos" />
 
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="GoogleMapActivity"
+            android:text="Mapa" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

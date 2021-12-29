@@ -12,7 +12,7 @@ import com.example.museoapp.domain.City;
 import com.example.museoapp.domain.Museum;
 
 
-@Database(entities = {Artwork.class, Museum.class, City.class}, version = 1)
+@Database(entities = {Artwork.class, Museum.class, City.class}, version = 3)
 public abstract class AppDatabase extends RoomDatabase {
     public abstract ArtworkDao artworkDao();
     public abstract MuseumDao museumDao();

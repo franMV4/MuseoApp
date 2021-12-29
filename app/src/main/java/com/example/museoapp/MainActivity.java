@@ -39,4 +39,8 @@ public class MainActivity extends AppCompatActivity {
     public void ShowArtworksActivity(View view){
         Intent show_artworks_activity= new Intent(this, ShowArtwork.class);
         startActivity(show_artworks_activity); }
+
+    public void GoogleMapActivity(View view){
+        Intent google_map_activity= new Intent(this, MapaGoogle.class);
+        startActivity(google_map_activity); }
 }
