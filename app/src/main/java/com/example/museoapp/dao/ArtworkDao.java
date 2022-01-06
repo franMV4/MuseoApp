@@ -2,8 +2,10 @@ package com.example.museoapp.dao;
 
 
 import androidx.room.Dao;
+import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
+import androidx.room.Update;
 
 
 import com.example.museoapp.domain.Artwork;
@@ -20,4 +22,16 @@ public interface ArtworkDao {
 
     @Insert
     void insert(Artwork artwork);
+
+    @Update
+    void update(Artwork artwork);
+
+
+
+
+
+
+    @Delete
+    void delete(Artwork artwork);
+
 }

@@ -43,4 +43,5 @@ public class MainActivity extends AppCompatActivity {
     public void GoogleMapActivity(View view){
         Intent google_map_activity= new Intent(this, MapaGoogle.class);
         startActivity(google_map_activity); }
+
 }

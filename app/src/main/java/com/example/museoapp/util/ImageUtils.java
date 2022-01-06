@@ -1,6 +1,7 @@
 package com.example.museoapp.util;
 
 import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.widget.ImageView;
 
 import java.io.ByteArrayOutputStream;
@@ -19,4 +20,7 @@ public class ImageUtils {
         return bos.toByteArray();
     }
 
+    public static Bitmap getBitmap(byte[] bytes) {
+        return BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+    }
 }

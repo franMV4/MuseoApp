@@ -87,7 +87,7 @@ public class NewArtWork extends AppCompatActivity implements AdapterView.OnItemC
         if ((museum.getId() == 0) || (name.equals("")) || (author.equals(""))) {
             Toast.makeText(this, getString(R.string.add_missing_data), Toast.LENGTH_SHORT).show();
         } else {
-            Artwork artwork = new Artwork(name, author,artworkImage, museum.getId());
+            Artwork artwork = new Artwork(0, name, author,artworkImage, museum.getId());
 
             AppDatabase db = Room.databaseBuilder(getApplicationContext(),
                     AppDatabase.class, "artworks").allowMainThreadQueries().build();

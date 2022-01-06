@@ -17,8 +17,8 @@ public class Artwork {
     @ColumnInfo
     private int museumId;
 
-    public Artwork(String name, String author, byte[] image, int museumId) {
-
+    public Artwork(int id, String name, String author, byte[] image, int museumId) {
+        this.id = id;
         this.name = name;
         this.author = author;
         this.museumId = museumId;

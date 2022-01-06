@@ -17,22 +17,26 @@
         tools:layout_editor_absoluteX="0dp">
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/MuseoApp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="a"
+            android:text="MuseoApp"
             android:textColor="#FFFFFF"
             android:textSize="60dp" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="414dp"
-        android:layout_height="475dp"
+        android:layout_height="615dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="-2dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="47dp" />
 
         <Button
             android:id="@+id/button13"
@@ -43,7 +47,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="23dp" />
 
         <Button
             android:id="@+id/button14"
@@ -54,7 +58,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="25dp" />
 
         <Button
             android:id="@+id/button11"
@@ -65,7 +69,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="27dp" />
 
         <Button
             android:id="@+id/button12"
@@ -74,12 +78,20 @@
             android:onClick="ShowArtworksActivity"
             android:text="Ver Obras de Arte" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
         <Button
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="ShowCitiesActivity"
-            android:text="Ver ciudades" />
+            android:onClick="ModifyArtwork"
+            android:text="Modificar" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="23dp" />
 
         <Button
             android:id="@+id/button4"
@@ -88,13 +100,18 @@
             android:onClick="ShowMuseumsActivity"
             android:text="Ver museos" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="GoogleMapActivity"
-            android:text="Mapa" />
-
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:onClick="GoogleMapActivity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

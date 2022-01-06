@@ -1,15 +1,26 @@
 package com.example.museoapp;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.room.Room;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.museoapp.database.AppDatabase;
+import com.example.museoapp.domain.Artwork;
 import com.example.museoapp.util.ImageUtils;
 
+import java.util.List;
+
 public class ArtworkDetail extends AppCompatActivity {
+
+    public List<Artwork> artworks;
+    private Artwork artwork = new Artwork (0, null, null, null, 0);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,11 +29,9 @@ public class ArtworkDetail extends AppCompatActivity {
 
 
         Intent intent = getIntent();
+
         String name = intent.getStringExtra("name");
         String author = intent.getStringExtra("author");
-        String museumId = intent.getStringExtra("museumId");
-
-
 
 
 
@@ -32,12 +41,8 @@ public class ArtworkDetail extends AppCompatActivity {
         TextView etAuthorDetailAuthor = findViewById(R.id.tvArtworkDescriptionDetail);
         etAuthorDetailAuthor.setText(author);
 
-        TextView etAuthorDetailMuseum = findViewById(R.id.tvArtworkMuseumDetail);
-        etAuthorDetailMuseum.setText(museumId);
-
-
-
-
 
     }
+
+
 }

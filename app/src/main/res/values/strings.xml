@@ -4,5 +4,10 @@
     <string name="museum_added">Museum added</string>
     <string name="artwork_added">Artwork added</string>
     <string name="google_maps_key">AIzaSyBsCTKFoZ3FfryebnVaI3NDM46kYWqXmuM</string>
+    <string name="modify_confirm_dialog">¿Confirmar cambios?</string>
+    <string name="delete_confirm_dialog">Eliminar la visita permanentemente. ¿Estás seguro?</string>
+    <string name="confirm_yes">Sí</string>
+    <string name="confirm_no">No</string>
+
 
 </resources>

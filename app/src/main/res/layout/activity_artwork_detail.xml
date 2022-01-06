@@ -37,13 +37,6 @@
             android:layout_width="match_parent"
             android:layout_height="74dp" />
 
-        <ImageView
-            android:id="@+id/artworkImageV"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_launcher_background"
-            tools:srcCompat="@drawable/ic_launcher_background" />
-
         <Space
             android:layout_width="match_parent"
             android:layout_height="257dp" />
